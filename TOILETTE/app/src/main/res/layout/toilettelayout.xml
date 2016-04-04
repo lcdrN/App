@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:weightSum="1"
+    android:columnCount="18"
+    android:rowCount="3"
+    android:rowOrderPreserved="false">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Adresse"
+        android:id="@+id/adresse"
+        android:layout_weight="0.04"
+        android:layout_marginStart="29dp"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/commune" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="nom"
+        android:id="@+id/nom"
+        android:layout_marginEnd="36dp"
+        android:layout_alignTop="@+id/commune"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/adresse"
+        android:layout_row="0"
+        android:layout_column="2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Commune"
+        android:id="@+id/commune"
+        android:layout_marginTop="27dp"
+        android:layout_row="0"
+        android:layout_column="17"
+        android:layout_marginEnd="68dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/nom" />
+
+</RelativeLayout>
